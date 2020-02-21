@@ -1,0 +1,15 @@
+---
+- name: SIMPLE DEBUG PLAYBOOK
+  hosts: localhost
+  gather_facts: no
+  
+  vars:
+    test_variable: "my test variable"
+	
+  tasks:
+    - name: DISPLAY TEST_VARIABLE
+	  debug:
+	  var: test_variable
+
+-
+-
